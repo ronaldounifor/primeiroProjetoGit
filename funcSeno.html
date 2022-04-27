@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+    function Potenciacao(A,B){
+        var pot  = 1
+        for(let i=0;i<B;i++){
+            pot*=A
+        }
+        return pot
+    }
+    function Fatorial(N){
+        var fat =1
+        while(N>1){
+            fat*=N
+            N--
+        }
+        return fat
+    }
+    var X = Number(prompt('Digite o ângulo'))
+    var N = parseInt(prompt('Digite a quantidade de termos'))
+    X = (X*Math.PI)/180
+
+    
+
+  
+        var j = 0
+        S = 1
+        var i = 0
+        var t = 1
+        while(j<N+1){
+            i = i +2 //ou i+=2
+            t = t*(((X*X)/(i*(i-1)))*-1)
+            S = S+t
+            
+            j++
+        }
+        console.log(S)
+
+
+    
+
+    
+</script>

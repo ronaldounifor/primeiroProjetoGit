@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+    function EhPrimo(N){
+        var contador = 0
+        for(var j=1;j<=N;j++){
+            if(N%j==0){
+                contador++
+            }
+        }
+        if(contador==2){
+            return true
+        }else{
+            return false
+        }
+    }
+    var N = parseInt(prompt())
+    var i = 0
+    var Soma = 0
+    while(i<N){
+        var x = parseInt(prompt())
+        if(EhPrimo(x)){
+            Soma+=x
+        }
+        i++
+    }
+console.log(Soma)
+</script>

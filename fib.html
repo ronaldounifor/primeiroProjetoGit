@@ -1,0 +1,32 @@
+<script>
+
+var N = parseInt(prompt("Digite a quantidade de termos."))
+var i = 0
+var t1 = 0
+var t2 = 1
+var p = t1+t2
+var msg = ''
+//esta repetição, repete N vezes
+while(i<N){
+    if(i<2){
+        if(i==0){
+            msg = msg + t1 +' '
+            //console.log(t1+" ")
+        }else{
+            msg = msg + t2 +' '
+            //console.log(t2+" ")
+        }
+    }else{
+        msg = msg + p +' '
+        //console.log(p+" ")
+        t1 = t2
+        t2 = p
+        p = t1+t2
+    }
+    i++
+}
+
+
+console.log(msg)
+
+</script>
